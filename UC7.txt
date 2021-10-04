@@ -1,0 +1,111 @@
+C ONE
+
+mysql> select * from employee_payroll34;
+mysql> show tables;
++----------------------------+
+| Tables_in_payroll_services |
++----------------------------+
+| employee_payroll           |
+| employee_payrollday32      |
+| employee_payrollday34      |
++----------------------------+
+3 rows in set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'payroll_services.employee_payroll34' doesn't exist
+mysql> select * from employee_payrollday34;
+Empty set (0.00 sec)
+
+mysql> describe employee_payrollday34;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| empid      | int         | YES  |     | NULL    |       |
+| empname    | varchar(80) | YES  |     | NULL    |       |
+| empsalary  | int         | YES  |     | NULL    |       |
+| dateofjoin | varchar(40) | YES  |     | NULL    |       |
+| gender     | varchar(30) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+5 rows in set  (0.01 sec)
+
+mysql>
+
+
+
+
+mysql> select * from employee_payrollday34;
++-------+---------+-----------+------------+--------+
+| empid | empname | empsalary | dateofjoin | gender |
++-------+---------+-----------+------------+--------+
+|     1 | Shital  |      5000 | 01-01-2015 | female |
++-------+---------+-----------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee_payrollday34;
++-------+---------+-----------+------------+--------+
+| empid | empname | empsalary | dateofjoin | gender |
++-------+---------+-----------+------------+--------+
+|     1 | Shital  |      5000 | 01-01-2015 | Female |
+|     1 | ABC     |      5500 | 02-01-2015 | Male   |
+|     1 | ABD     |      5600 | 04-01-2015 | Male   |
+|     1 | ABJ     |      5500 | 06-01-2015 | Male   |
+|     1 | ABO     |      5500 | 06-03-2015 | Female |
+|     1 | XYZ     |      3400 | 06-09-2015 | Female |
+|     1 | XYP     |      3800 | 16-09-2015 | Female |
+|     1 | XYN     |      3889 | 16-12-2015 | Female |
+|     1 | JKL     |      9865 | 30-12-2015 | Female |
++-------+---------+-----------+------------+--------+
+9 rows in set (0.00 sec)
+
+mysql>
+
+
+mysql> select * from employee_payrollday34;
++-------+---------+-----------+------------+--------+
+| empid | empname | empsalary | dateofjoin | gender |
++-------+---------+-----------+------------+--------+
+|     1 | Shital  |      5000 | 01-01-2015 | Female |
+|     1 | ABC     |      5500 | 02-01-2015 | Male   |
+|     1 | ABD     |      5600 | 04-01-2015 | Male   |
+|     1 | ABJ     |      5500 | 06-01-2015 | Male   |
+|     1 | ABO     |      5500 | 06-03-2015 | Female |
+|     1 | XYZ     |      3400 | 06-09-2015 | Female |
+|     1 | XYP     |      3800 | 16-09-2015 | Female |
+|     1 | XYN     |      3889 | 16-12-2015 | Female |
+|     1 | JKL     |      9865 | 30-12-2015 | Female |
++-------+---------+-----------+------------+--------+
+9 rows in set (0.00 sec)
+
+Database changed
+mysql> shoe tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'shoe tables' at line 1
+mysql> show tables;
++-----------------------+
+| Tables_in_emp_payroll |
++-----------------------+
+| employee_payroll      |
++-----------------------+
+1 row in set (0.01 sec)
+
+mysql> select * from employee_payroll;
++-------+----------------+-----------+------------+------------+--------+
+| empid | empname        | empsalary | dateofjoin | fathername | Gender |
++-------+----------------+-----------+------------+------------+--------+
+|     1 | Shital         |     76000 | 2022-11-10 | NULL       | female |
+|     1 | Preetham       |     71000 | 2012-02-01 | NULL       | NULL   |
+|     3 | mahesh mishra  |     12000 | 2012-03-01 | NULL       | NULL   |
+|     4 | Ram            |     12300 | 2012-01-01 | NULL       | Male   |
+|     7 | Himashu        |      1300 | 2011-01-01 | NULL       | male   |
++-------+----------------+-----------+------------+------------+--------+
+5 rows in set (0.01 sec)
+
+
+
+
+Displaying employees joined between given dates
+Displaying all values 
+User record: 
+ Min: 1300, 
+ Max: 76000,
+ Sum: 89600,
+ Avg: 29866,
+ Count: 3,
